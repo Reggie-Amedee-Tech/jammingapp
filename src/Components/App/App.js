@@ -56,7 +56,6 @@ export class App extends React.Component {
       <h1>Ja<span className="highlight">mmm</span>ing</h1>
       <div className="App">
         <SearchBar />
-    
       <div className="App-playlist">
         {<SearchResults  searchResults={this.state.searchResults} onAdd={this.addTrack}/>}
         {<PlayList playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savedPlaylist}/>}
